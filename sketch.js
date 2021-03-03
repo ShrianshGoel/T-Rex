@@ -147,8 +147,9 @@ function draw() {
     cloudsGroup.setVelocityXEach(0);
     cloudsGroup.setLifetimeEach(-2);
     
-    if (mousePressedOver(reset)){
+    if (mousePressedOver(reset) || touches.length>0){
         gameState=PLAY;
+      touches = [];
       cloudsGroup.destroyEach();
       obstaclesGroup.destroyEach();
       score=0;
