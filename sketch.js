@@ -194,7 +194,7 @@ function spawnObstacles(){
    
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.5;
-    obstacle.lifetime = 300;
+    obstacle.lifetime = width/3;
    
    //adding obstacles to the group
    obstaclesGroup.add(obstacle);
