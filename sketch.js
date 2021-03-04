@@ -109,12 +109,11 @@ function draw() {
     
       if(keyDown("space")&& trex.y >= height-50 || touches.length>0 ) {
     trex.velocityY = -17;
+        jump.play();
         touches = [];
+        
         }
-    if (keyWentDown("space") || touches.length>0){
-      jump.play();
-       touches = [];
-    }
+   
     
      trex.velocityY = trex.velocityY + 0.8
   //spawn the clouds
